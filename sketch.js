@@ -54,6 +54,7 @@ function setup() {
 }
   
 function draw() {
+    getBackgroundImage();
     if (back) {
         background(back);
     }
@@ -116,8 +117,8 @@ async function getBackgroundImage(){
     var daytime = responseJson.datetime;
     var hour = daytime.slice(11,13);
     if (hour>=06&&hour<=18) {
-        back=background("black");
+        back="yellow";
     } else{
-        back=background("yellow");
+        back="black";
     }
 }
