@@ -58,7 +58,7 @@ function draw() {
     if (back) {
         background(back);
     }
-    background(220);
+   // background(220);
     Engine.update(engine);
     ground.display();
     stand.display();
